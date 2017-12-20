@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BOZZA PER TESI DI LAUREA IN LATEX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt]{book}
+\usepackage[italian]{babel}	
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+
+\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[LO]{\small\nouppercase{\rightmark}}
+%\fancyhead[RE]{\small\nouppercase{\leftmark}}
+%\fancyhead[RO,LE]{\small\thepage}
+%\fancyfoot[LE,RO]{\thepage}
+
+\title{titolo tesi}
+\author{Jane Doe}
+\date{23 febbraio 2018}
+%
+
+\begin{document}
+	\pagenumbering{roman}
+	\maketitle
+	\tableofcontents
+	\pagenumbering{arabic}
+	\chapter{Introduzione}
+		\section{Cosè il software}
+		I primi calcolatori sono stati sviluppati negli anni 40 dello scorso secolo, allora non vi era distinzione tra hardware e software, la “programmazione” avveniva con il saldatore. Negli anni 50 furono resi disponibili gli strumenti di programmazione primordiali, prima i linguaggi assemblativi, un grosso passo avanti dal punto di vista della programmazione rispetto il linguaggio
+		macchina, poi linguaggi di alto livello come Fortran e Cobol.
+		Si cominciò così a sviluppare l’attività di programmazione e la produzione del software.
+		\begin{quotation}
+			\textit{Software: sequenza di istruzioni date al computer per svolgere un determinato compito(programma), con relativa documentazione e dati di configurazione necessari per la sua corretta esecuzione.}
+			\footnote{Per maggiori info si da riferimento \cite{libro:is}}
+		\end{quotation}
+		La programmazione comunque avveniva a livello individuale: un programma era di dimensioni limitate, e veniva sviluppato e mantenuto da una persona.\\
+		Questo modo di intendere la programmazione è continuato fino alla fine degli anni 60, periodo della crisi del software.\\
+		Come conseguenza della costruzione di macchine sempre più potenti e delle richieste del mercato, venivano realizzati programmi sempre più complessi che ad un certo punto travalicarono il campo della programmazione individuale,		quindi il problema dal quale derivava la crisi del software era il passaggio dalla programmazione individuale alla programmazione di squadra; da
+		prodotto artigianale il software doveva diventare un prodotto industriale( compiti differenziati del personale coinvolto nel processo, nascita delle metodologie di sviluppo). Nacque così l’ingegneria del software.
+		
+		\newpage
+		
+		\section{Cosè IS}
+		Attualemnte tutte le nazioni dipendo da sistemi complessi informatici, strutture e servizi nazionali si affidano a questi sistemi.
+		Quindi produrre software senza sprechi è essenziale per il funzionamento delle economie nazionali.
+		\begin{quotation}
+			\textit{L'ingegneria del software è una disciplina che si occupa di tutti gli aspetti della produzione del software,dalla specifica dei requisiti alla mautenzione del sistema il cui obiettivo è lo sviluppo di sistemi software di alta qualita senza sprechi(minimizzare i costi).}
+		\end{quotation}
+		Un prodotto software non puo essere realizzato senza stabilire delle precise metodologie di processo lavorativo. Anche se i prodotti software sono molto diversi tra loro esisto delle fasi del ciclo di vita del software che sono comuni a tutti: 
+		\begin{itemize}
+			\item \textbf{Specifica del software:} fase in cui vengono specificati e analizzati i requisiti del software da sviluppare, spesso grazie a una fitta interazione con i committenti. In questa fase, di solito, viene stilato anche uno studio di fattibilità, che illustra se ci sia una reale necessità di sviluppare il software e in quali termini esso vada sviluppato. Di norma, durante questa fase vengono prodotti documenti in linguaggio naturale e possono essere generati dei diagrammi dei casi d'uso;
+			
+			\item \textbf{Progettazione:} fase in cui viene progettato in maniera formale il software, facendo in modo che venga rispettato quanto deciso in fase di analisi dei requisiti. Di norma, al termine di questa fase, vengono generati tutti i mancanti diagrammi UML, ovvero sia quelli riguardanti struttura, comportamento e interazione delle componenti del software.
+			\item \textbf{implementazione:}fase in cui viene effettivamente prodotto il codice che implementa quanto progettato nella fase precedente. Al termine di questa fase viene fornita, a tutti gli effetti, una versione funzionante dell’applicazione da sviluppare.
+			\item \textbf{Test:} fase in cui viene verificato che tutti i requisiti (funzionali o non funzionali) descritti nella prima fase siano stati effettivamente implementati nell’applicazione. Al termine di questa fase, di norma, vengono generati dei documenti di test report in linguaggio naturale che descrivono l’esito della validazione del software.
+			\item \textbf{Evoluzione:} fase, successiva all’effettivo rilascio del software, in cui si manutiene l’applicazione e la si modifica in caso di cambiamenti in certuni requisiti, si correggono eventuali bug e si cerca di migliorare le prestazioni
+		\end{itemize}
+		
+		\section{Caratteristiche buon software}
+		\section{Sfide IS}
+	\chapter{Sistemi Software}
+		\section{Cosè un sistema}
+		\section{Sistemi critici}
+	\chapter{Tool per checking sistemi}
+		\section{SRS}
+		\section{Output}
+	\chapter{Sviluppi fututi} \label{ladnsdnasdasdksd}
+	\chapter{Conclusioni} \label{ladnsdnasdasdksd}
+	
+	\begin{thebibliography}{9}
+		\bibitem{libro:is}
+		Ian, Sommerville (2005),
+		\emph{Ingegneria del software}, 7a edizione, Pearson Education Italia.
+		\bibitem{mori:tesi}
+		Mori, Lapo Filippo (2007),
+		"Scrivere la tesi di laurea".
+	\end{thebibliography}
+	
+\end{document}
